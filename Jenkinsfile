@@ -9,7 +9,7 @@ pipeline{
         }
           stage('git clone') {
           steps{
-              git url:'https://github.com/aravindhasiddharthan/terraform-spring-boot.git'
+             git credentialsId: 'gitCredential', url: 'https://github.com/aravindhasiddharthan/terraform-spring-boot.git'
           }
         }
       }
