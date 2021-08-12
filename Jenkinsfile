@@ -9,7 +9,7 @@ pipeline{
         }
           stage('git clone') {
           steps{
-              
+              git 'https://github.com/aravindhasiddharthan/terraform-spring-boot.git'
           }
         }
       }
