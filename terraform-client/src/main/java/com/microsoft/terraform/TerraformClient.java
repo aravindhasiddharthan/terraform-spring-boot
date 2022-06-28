@@ -23,6 +23,7 @@ public class TerraformClient implements AutoCloseable {
     private boolean inheritIO;
     private Consumer<String> outputListener, errorListener;
 
+    
     public TerraformClient() {
         this(new TerraformOptions());
     }
