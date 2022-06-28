@@ -3,6 +3,7 @@ resource "azurerm_resource_group" "rg" {
   location = "westus2"
 }
 
+
 resource "azurerm_storage_account" "testsa" {
   name                     = "tfclienttestsa"
   resource_group_name      = "${azurerm_resource_group.rg.name}"
